@@ -7,7 +7,7 @@ const clearEl = document.getElementById("clear");
 
 const ctx = canvas.getContext("2d");
 
-let size = 10;
+const size = 10;
 let isPressed = false;
 colorEl.value = "black";
 let color = colorEl.value;
@@ -45,6 +45,7 @@ function drawCircle(x, y) {
   ctx.beginPath();
   ctx.arc(x, y, size, 0, Math.PI * 2);
   ctx.fillStyle = color;
+  ctx.fill();
   ctx.fill();
 }
 
